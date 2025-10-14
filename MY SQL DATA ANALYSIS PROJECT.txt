@@ -1,0 +1,38 @@
+1
+select sum(city.population)
+from city 
+join country 
+on city.countrycode = country.code 
+where continent = "Asia"
+
+Answer:
+27028484
+
+2
+FROM CITY
+JOIN COUNTRY 
+ON CITY.CountryCode = COUNTRY.Code
+WHERE co.CONTINENT = 'Africa"
+
+Answer:
+Qina 
+Warraq al-Arab 
+Kempton Park 
+Alberton 
+Klerksdorp 
+Uitenhage 
+Brakpan 
+Libreville 
+
+3
+SELECT COUNTRY.CONTINENT
+floor(AVG(CITY.POPULATION))
+FROM CITY JOIN COUNTRY ON CITY.COUNTRYCODE = COUNTRY.CODE
+GROUP BY COUNTRY.CONTINENT
+
+Answer
+Oceania 109189 
+South America 147435 
+Europe 175138 
+Africa 274439 
+Asia 693038 
